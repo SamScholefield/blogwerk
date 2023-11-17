@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "blogwerk:build:production"
+              "buildTarget": "blogwerk:build:production"
             },
             "development": {
-              "browserTarget": "blogwerk:build:development"
+              "buildTarget": "blogwerk:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blogwerk:build"
+            "buildTarget": "blogwerk:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
