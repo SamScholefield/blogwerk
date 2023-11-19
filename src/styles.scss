@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #18181b;
+  min-height: 100vh;
+}
+
+a {
+  color: #fb923c;
+  text-decoration: none;
+  &:visited {
+    color: #fb923c;
+  }
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
