@@ -1,8 +1,15 @@
 <div class="app">
   <nav>
-    <a [routerLink]="appPaths.FEATURE.MAIN">MAIN</a>
-    <a [routerLink]="appPaths.FEATURE.FORM">FORM</a>
-    <a [routerLink]="appPaths.FEATURE.DIALOG">DIALOG</a>
+    <a [routerLink]="appPaths.FEATURE.ROOT" class="square-icon"></a>
+    <a [routerLink]="appPaths.FEATURE.MAIN + '/' + appPaths.SECTION.CREATE">{{
+      "common.create" | translate
+    }}</a>
+    <a
+      [routerLink]="
+        appPaths.FEATURE.MAIN + '/123456789/' + appPaths.SECTION.EDIT
+      "
+      >{{ "common.edit" | translate }}</a
+    >
   </nav>
   <div class="main-content">
     <router-outlet></router-outlet>

@@ -1,0 +1,7 @@
+{
+  "common": {
+    "hello": "Well hello there",
+    "create": "create",
+    "edit": "edit"
+  }
+}
